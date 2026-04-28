@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponte Dourada - Profissionais</title>
+    <link rel="stylesheet" href="arquivocss.css">
+</head>
+<body>
+
+<div class="page-form">
+    <div class="form-container">
+        <div class="form-header">
+            <button onclick="voltar()" class="btn-voltar">← Voltar</button>
+            <h2>Profissionais - Cadastro</h2>
+        </div>
+        
+        <form id="form-profissionais" class="form-cadastro">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Nome *</label>
+                    <input type="text" id="profissional-nome" required>
+                </div>
+                <div class="form-group">
+                    <label>Especialidade</label>
+                    <input type="text" id="profissional-especialidade">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="tel" id="profissional-telefone">
+                </div>
+                <div class="form-group">
+                    <label>Registro</label>
+                    <input type="text" id="profissional-registro">
+                </div>
+            </div>
+            <button type="submit" class="btn-salvar">Salvar Profissional</button>
+        </form>
+        
+        <div id="mensagem-form" class="mensagem-area"></div>
+    </div>
+</div>
+
+<script src="arquivojavascript.js"></script>
+</body>
+</html>

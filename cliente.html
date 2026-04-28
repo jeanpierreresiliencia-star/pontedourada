@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponte Dourada - Clientes</title>
+    <link rel="stylesheet" href="arquivocss.css">
+</head>
+<body>
+
+<div class="page-form">
+    <div class="form-container">
+        <div class="form-header">
+            <button onclick="voltar()" class="btn-voltar">← Voltar</button>
+            <h2>Clientes - Cadastro</h2>
+        </div>
+        
+        <form id="form-clientes" class="form-cadastro">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Nome Completo *</label>
+                    <input type="text" id="cliente-nome" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="tel" id="cliente-telefone">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="cliente-email">
+                </div>
+                <div class="form-group">
+                    <label>Endereço</label>
+                    <input type="text" id="cliente-endereco">
+                </div>
+            </div>
+            <button type="submit" class="btn-salvar">Salvar Cliente</button>
+        </form>
+        
+        <div id="mensagem-form" class="mensagem-area"></div>
+    </div>
+</div>
+
+<script src="arquivojavascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponte Dourada - Serviços</title>
+    <link rel="stylesheet" href="arquivocss.css">
+</head>
+<body>
+
+<div class="page-form">
+    <div class="form-container">
+        <div class="form-header">
+            <button onclick="voltar()" class="btn-voltar">← Voltar</button>
+            <h2>Serviços - Cadastro</h2>
+        </div>
+        
+        <form id="form-servicos" class="form-cadastro">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Serviço *</label>
+                    <input type="text" id="servico-nome" required>
+                </div>
+                <div class="form-group">
+                    <label>Duração (minutos)</label>
+                    <input type="number" id="servico-duracao">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Descrição</label>
+                <textarea id="servico-descricao" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-salvar">Salvar Serviço</button>
+        </form>
+        
+        <div id="mensagem-form" class="mensagem-area"></div>
+    </div>
+</div>
+
+<script src="arquivojavascript.js"></script>
+</body>
+</html>
